@@ -40,7 +40,7 @@ graph TD
 ## ✨ Core Features & Innovation
 
 1. **Blockchain-Based Alternative Data:** Utilizes digital footprint, work history, and social reputation for transparent and fair credit assessment.
-2. **LangChain RAD|G Agent implementation:** The core AI engine employs a custom **RAD|G (Retrieve, Analyze, Decide, Generate)** architecture built on LangChain. It retrieves live financial data traces, analyzes volatility, dictates scoring operations orchestrating LLMs, and acts as an interactive financial co-pilot.
+2. **LangChain RAG Agent implementation:** The core AI engine employs a custom **RAD|G (Retrieve, Analyze, Decide, Generate)** architecture built on LangChain. It retrieves live financial data traces, analyzes volatility, dictates scoring operations orchestrating LLMs, and acts as an interactive financial co-pilot.
 3. **Verifiable Financial Identity:** Develops an auditable financial identity using the Account Aggregator as a consent-based, single source of truth.
 4. **On-Chain User Sovereignty:** Consent is managed via on-chain smart contracts. Revocation is instant and programmatic, ensuring absolute user control.
 
