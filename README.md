@@ -16,13 +16,20 @@ We are building verifiable financial identity on the blockchain to unlock credit
 
 ```mermaid
 graph TD
-    A[Gig Worker] -->|Provides Consent| B(Account Aggregator)
-    C[Banks/Wallets] -->|Financial Data| B
-    D[Gig Platforms] -->|Work History| B
-    B -->|Unified Data| E{Agentic AI Credit Scoring}
-    E -->|Analyzes Cash Flow & Volatility| F[Gig Credit Score - GCS]
-    F -->|Shared via Smart Contract| G[Consent-Based Lending Marketplace]
-    G -->|De-risked Data| H[Lenders / NBFCs]
+    %% Styling
+    classDef worker fill:#8b5cf6,stroke:#4c1d95,stroke-width:2px,color:#fff,rx:10,ry:10;
+    classDef agg fill:#3b82f6,stroke:#1e3a8a,stroke-width:2px,color:#fff,rx:10,ry:10;
+    classDef ai fill:#ef4444,stroke:#7f1d1d,stroke-width:2px,stroke-dasharray: 5 5,color:#fff,rx:10,ry:10;
+    classDef market fill:#10b981,stroke:#064e3b,stroke-width:2px,color:#fff,rx:10,ry:10;
+    classDef default fill:#f8fafc,stroke:#94a3b8,stroke-width:2px;
+
+    A([👨‍💻 Gig Worker]):::worker -->|Provides Consent| B{🏦 Account Aggregator}:::agg
+    C[(💳 Banks & Wallets)] -->|Financial Data| B
+    D[📱 Gig Platforms] -->|Work History| B
+    B -->|Unified Data| E{{🤖 Agentic AI Credit Scoring}}:::ai
+    E -->|Analyzes Cash Flow & Volatility| F[📊 Gig Credit Score - GCS]:::worker
+    F -->|Shared via Smart Contract| G[🤝 Consent-Based Lending Marketplace]:::market
+    G -->|De-risked Data| H[🏢 Lenders & NBFCs]:::agg
     H -->|Credit Access & Loans| A
 ```
 
@@ -39,29 +46,45 @@ graph TD
 
 ## 🛠 Tech Stack
 
-- **Backend / Web Integration:** Django/Flask, LangChain for AI integration
-- **Blockchain / Web3:** Web3.py, Solidity, Polygon, Hyperledger
-- **Wallets & Integration:** Biconomy / Pimlico SDKs for Web2-style logins (phone/email), hiding Web3 complexity
-- **Data Aggregation:** India's Account Aggregator (AA) network (Finvu, CAMS, OneMoney)
+### ⚙️ Backend & AI Integration
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+*LangChain for AI integration and data pipelines.*
+
+### ⛓️ Blockchain & Web3
+![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white) ![Polygon](https://img.shields.io/badge/Polygon-8247E5?style=for-the-badge&logo=polygon&logoColor=white) ![Hyperledger](https://img.shields.io/badge/hyperledger-%2340B5Aac.svg?style=for-the-badge&logo=hyperledger&logoColor=white)
+*Web3.py for chain interaction. Building verifiable data on hyperledger and polygon.*
+
+### 💳 Wallets & Integration
+![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white) ![Biconomy](https://img.shields.io/badge/Biconomy-FF4B4B?style=for-the-badge&logo=web3.js&logoColor=white) 
+*Biconomy / Pimlico SDKs for Web2-style logins (phone/email), hiding Web3 complexity.*
+
+### 📊 Data Aggregation
+![Data Aggregation](https://img.shields.io/badge/Account_Aggregator-AA_Framework-brightgreen?style=for-the-badge)
+*India's Account Aggregator (AA) network (Finvu, CAMS, OneMoney) for comprehensive secure financial profiles.*
 
 ## 💼 Business Model & Viability
 
 ```mermaid
 graph LR
-    subgraph Revenue
-        A[Monetization Streams] --> B(Credit-Report APIs)
-        A --> C(Lender Analytics Dashboards)
-        A --> D(Premium User Insights)
+    %% Styling
+    classDef rev fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,rx:8,ry:8;
+    classDef eco fill:#dcfce7,stroke:#16a34a,stroke-width:2px,rx:8,ry:8;
+    classDef sus fill:#ffedd5,stroke:#ea580c,stroke-width:2px,rx:8,ry:8;
+    
+    subgraph Revenue [💰 Revenue Models]
+        A[Monetization Streams]:::rev --> B(Credit-Report APIs):::rev
+        A --> C(Lender Analytics Dashboards):::rev
+        A --> D(Premium User Insights):::rev
     end
     
-    subgraph Ecosystem
-        E[Partnerships] --> F(NBFCs & Neo Banks)
-        E --> G(Gig Platforms)
+    subgraph Ecosystem [🌐 Ecosystem Growth]
+        E[Partnerships]:::eco --> F(NBFCs & Neo Banks):::eco
+        E --> G(Gig Platforms):::eco
     end
     
-    subgraph Growth
-        H[Sustainability] --> I(Continuous Learning AI)
-        H --> J(Blockchain Trust Layer)
+    subgraph Sustainability [📈 Long-Term Vision]
+        H[Defensible Future]:::sus --> I(Continuous Learning AI):::sus
+        H --> J(Blockchain Trust Layer):::sus
     end
 ```
 
