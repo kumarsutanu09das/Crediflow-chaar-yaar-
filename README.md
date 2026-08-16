@@ -40,15 +40,15 @@ graph TD
 ## ✨ Core Features & Innovation
 
 1. **Blockchain-Based Alternative Data:** Utilizes digital footprint, work history, and social reputation for transparent and fair credit assessment.
-2. **Dynamic Agentic AI:** Analyzes real-time transaction behavior—not just past repayments—and acts as a financial co-pilot to offer personalized insights to users.
+2. **LangChain RAD|G Agent implementation:** The core AI engine employs a custom **RAD|G (Retrieve, Analyze, Decide, Generate)** architecture built on LangChain. It retrieves live financial data traces, analyzes volatility, dictates scoring operations orchestrating LLMs, and acts as an interactive financial co-pilot.
 3. **Verifiable Financial Identity:** Develops an auditable financial identity using the Account Aggregator as a consent-based, single source of truth.
 4. **On-Chain User Sovereignty:** Consent is managed via on-chain smart contracts. Revocation is instant and programmatic, ensuring absolute user control.
 
 ## 🛠 Tech Stack
 
 ### ⚙️ Backend & AI Integration
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
-*LangChain for AI integration and data pipelines.*
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+*Leveraging LangChain to build the custom RAD|G agent that orchestrates LLMs, handles real-time financial prompting, and seamlessly manages complex data pipelines.*
 
 ### ⛓️ Blockchain & Web3
 ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white) ![Polygon](https://img.shields.io/badge/Polygon-8247E5?style=for-the-badge&logo=polygon&logoColor=white) ![Hyperledger](https://img.shields.io/badge/hyperledger-%2340B5Aac.svg?style=for-the-badge&logo=hyperledger&logoColor=white)
